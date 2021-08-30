@@ -5,9 +5,6 @@ import 'moment/locale/fr';
 import fr_FR from 'antd/lib/locale-provider/fr_FR';
 import { setLocale as setYupLocale } from 'yup';
 import fr from 'i18n/fr';
-import en from 'i18n/fr';
-import fr_en from 'i18n/fr';
-import ar from 'i18n/fr';
 
 let currentLanguageCode = null;
 
@@ -25,7 +22,7 @@ const languages = {
     flag: '/images/flags/24/France.png',
     dictionary: fr,
     antd: fr_FR,
-  }
+  },
 };
 
 function init() {

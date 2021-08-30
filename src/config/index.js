@@ -1,3 +1,3 @@
-const config = require(`./localhost`).default;
+const config = require(`./devlopment`).default;
 
 export default config;

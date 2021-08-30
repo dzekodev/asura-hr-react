@@ -227,11 +227,7 @@ export default class AuthService {
                 id
               }
               account_setting {
-                language {
-                  code
-                  name
-                  id
-                }
+                id
               }
             }
           }

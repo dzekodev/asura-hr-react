@@ -281,7 +281,6 @@ const actions = {
           },
         });
       } catch (error) {
-        await service.signout();
         if (
           error.response.data.message.includes(
             'User not activated',

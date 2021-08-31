@@ -1,9 +1,10 @@
-const serverAddress = '104.131.177.205:8003';
-const backendUrl = `http://${serverAddress}/v1/graphql`;
-const authApi = 'http://104.131.177.205:4003/auth/';
+const serverAddress = 'api-asura-hr.asura.ma';
+const backendUrl = `https://${serverAddress}/v1/graphql`;
+const authApi = 'https://api-plus-asura-hr.asura.ma/auth/';
 const backendApi = '';
 const webSocketLink = `wss://${serverAddress}/v1/graphql`;
-const storageApi = 'http://104.131.177.205:4003/storage/';
+const storageApi =
+  'https://api-plus-asura-hr.asura.ma/auth/';
 export default {
   backendUrl,
   backendApi,

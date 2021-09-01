@@ -42,7 +42,7 @@ const selectRolesName = createSelector(
     Array.isArray(currentUser.user_roles) &&
     currentUser.user_roles.length > 0 &&
     currentUser.user_roles[0].role
-      ? currentUser.user_roles[0].roles.name
+      ? currentUser.user_roles[0].role
       : currentUser.default_role,
 );
 

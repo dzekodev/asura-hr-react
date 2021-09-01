@@ -48,14 +48,16 @@ const privateRoutes = [
   },
   {
     path: '/editpassword',
-    loader: () => import('view/auth/ProfileFormEditPasswordPage'),
+    loader: () =>
+      import('view/auth/ProfileFormEditPasswordPage'),
     permissionRequired: null,
     exact: true,
     menu: false,
   },
   {
     path: '/editpassword',
-    loader: () => import('view/auth/ProfileFormEditPasswordPage'),
+    loader: () =>
+      import('view/auth/ProfileFormEditPasswordPage'),
     permissionRequired: null,
     exact: true,
     menu: false,
@@ -79,7 +81,8 @@ const privateRoutes = [
   },
   {
     path: '/color/importer',
-    loader: () => import('view/color/importer/colorImporterPage'),
+    loader: () =>
+      import('view/color/importer/colorImporterPage'),
     menu: false,
     permissionRequired: permissions.colorImport,
     exact: true,
@@ -94,6 +97,46 @@ const privateRoutes = [
   {
     path: '/color/:id',
     loader: () => import('view/color/view/colorViewPage'),
+    menu: false,
+    permissionRequired: permissions.colorRead,
+    exact: true,
+  },
+  {
+    path: '/songs',
+    loader: () => import('view/songs/list/songsListPage'),
+    permissionRequired: permissions.songsRead,
+    exact: true,
+    icon: <CarOutlined />,
+    label: i18n('songs.menu'),
+    menu: {
+      exact: true,
+    },
+  },
+  {
+    path: '/songs/new',
+    loader: () => import('view/songs/form/songsFormPage'),
+    menu: false,
+    permissionRequired: permissions.songsCreate,
+    exact: true,
+  },
+  {
+    path: '/songs/importer',
+    loader: () =>
+      import('view/songs/importer/songsImporterPage'),
+    menu: false,
+    permissionRequired: permissions.songsImport,
+    exact: true,
+  },
+  {
+    path: '/songs/:id/edit',
+    loader: () => import('view/songs/form/songsFormPage'),
+    menu: false,
+    permissionRequired: permissions.songsEdit,
+    exact: true,
+  },
+  {
+    path: '/songs/:id',
+    loader: () => import('view/songs/view/songsViewPage'),
     menu: false,
     permissionRequired: permissions.colorRead,
     exact: true,
@@ -115,11 +158,13 @@ const publicRoutes = [
   },
   {
     path: '/auth/forgot-password/code',
-    loader: () => import('view/auth/ForgotPasswordPageCode'),
+    loader: () =>
+      import('view/auth/ForgotPasswordPageCode'),
   },
   {
     path: '/auth/forgot-password/new-password',
-    loader: () => import('view/auth/ForgotPasswordPageReset'),
+    loader: () =>
+      import('view/auth/ForgotPasswordPageReset'),
   },
 ];
 

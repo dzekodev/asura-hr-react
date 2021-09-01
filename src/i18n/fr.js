@@ -256,6 +256,51 @@ const fr = {
     disabled: 'Désactivé ?',
   },
 
+  songs: {
+    fields: {
+      id: 'Id',
+      name: 'Nom',
+      composedBy: 'Composer Par',
+    },
+    name: 'Musique',
+    label: 'Musique',
+    menu: 'Musique',
+    exporterFileName: 'songs_export',
+    list: {
+      menu: 'Musique',
+      title: 'Musique',
+    },
+    create: {
+      success: 'Musique crée avec succès',
+    },
+    update: {
+      success: 'Musique modifée avec succès',
+    },
+    destroy: {
+      success: 'Musique supprimée avec success',
+    },
+    destroyAll: {
+      success: 'Musique supprimées avec succès',
+    },
+    edit: {
+      title: 'Modifier une Musique',
+    },
+    new: {
+      title: 'Nouvelle Musique',
+    },
+    view: {
+      title: 'Consulter une Musique',
+    },
+    importer: {
+      title: 'Importer en masse les Musique',
+      fileName: 'songs_import_template',
+      hint: 'Files/Images doivent être les URL des fichiers séparés par un espace.',
+    },
+
+    enabled: 'Activé ?',
+    disabled: 'Désactivé ?',
+  },
+
   auditLog: {
     menu: 'Audit Logs',
     title: 'Audit Logs',

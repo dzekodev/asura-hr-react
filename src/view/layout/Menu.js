@@ -72,6 +72,7 @@ class Menu extends Component {
   };
 
   match = (permission) => {
+    console.log({ permission });
     const permissionChecker = new PermissionChecker(
       this.props.currentUser,
     );
@@ -98,7 +99,6 @@ class Menu extends Component {
                 style={{ borderRadius: 5, marginTop: 30 }}
               />
             </Logo>
-
           </div>
 
           <AntMenu

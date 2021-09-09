@@ -12,21 +12,40 @@ class Permissions {
         id: 'parameters',
         allowedRoles: [roles.admin],
       },
-      songsRead: {
-        id: 'songsRead',
-        allowedRoles: [roles.singer],
+      
+      customersRead: {
+        id: 'customersRead',
+        allowedRoles: [roles.admin],
       },
-      songsCreate: {
-        id: 'songsCreate',
-        allowedRoles: [roles.singer],
+      customersCreate: {
+        id: 'customersCreate',
+        allowedRoles: [roles.admin],
       },
-      songsImport: {
-        id: 'songsImport',
-        allowedRoles: [roles.singer],
+      customersImport: {
+        id: 'customersImport',
+        allowedRoles: [roles.admin],
       },
-      songsEdit: {
-        id: 'songsEdit',
-        allowedRoles: [roles.singer],
+      customersEdit: {
+        id: 'customersEdit',
+        allowedRoles: [roles.admin],
+      },
+      
+      
+      needsRead: {
+        id: 'needsRead',
+        allowedRoles: [roles.admin],
+      },
+      needsCreate: {
+        id: 'needsCreate',
+        allowedRoles: [roles.admin],
+      },
+      needsImport: {
+        id: 'needsImport',
+        allowedRoles: [roles.admin],
+      },
+      needsEdit: {
+        id: 'needsEdit',
+        allowedRoles: [roles.admin],
       },
     };
   }

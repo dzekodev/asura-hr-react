@@ -222,10 +222,6 @@ export default class AuthService {
               first_name
               last_name
               phone
-              genderType {
-                name
-                id
-              }
               account_setting {
                 id
               }

@@ -301,6 +301,156 @@ const fr = {
     disabled: 'Désactivé ?',
   },
 
+  customers: { 
+    fields: {
+      id: 'Id',
+      name: 'Nom',
+      email: 'Email',
+      phone_number: 'Phone_number',
+      created_at: 'Created_at',
+      updated_at: 'Updated_at',
+    },
+    name: 'Customer',
+    label: 'Customer',
+    menu: 'Client',
+    exporterFileName: 'customers_export',
+    list: {
+      menu: 'Customer',
+      title: 'Client',
+    },
+    create: {
+      success: 'Customer crée avec succès',
+    },
+    update: {
+      success: 'Customer modifée avec succès',
+    },
+    destroy: {
+      success: 'Customer supprimée avec success',
+    },
+    destroyAll: {
+      success: 'Customer supprimées avec succès',
+    },
+    edit: {
+      title: 'Modifier une Customer',
+    },
+    new: {
+      title: 'Nouvelle Customer',
+    },
+    view: {
+      title: 'Consulter une Customer',
+    },
+    importer: {
+      title: 'Importer en masse les Customer',
+      fileName: 'customers_import_template',
+      hint: 'Files/Images doivent être les URL des fichiers séparés par un espace.',
+    },
+
+    enabled: 'Activé ?',
+    disabled: 'Désactivé ?',
+  },
+  needs: { 
+    fields: {
+      id: 'Id',
+      descriptiion: 'Description',
+      type: 'type',
+      monthly_rate: 'monthly_rate',
+      status: 'status',
+      created_at: 'Created_at',
+      updated_at: 'Updated_at',
+      ended_at: 'Ended_at',
+    },
+    name: 'Besoin',
+    label: 'Besoin',
+    menu: 'Besoin',
+    exporterFileName: 'needs_export',
+    list: {
+      menu: 'Besoin',
+      title: 'Besoin',
+    },
+    create: {
+      success: 'Besoin crée avec succès',
+    },
+    update: {
+      success: 'Besoin modifée avec succès',
+    },
+    destroy: {
+      success: 'Besoin supprimée avec success',
+    },
+    destroyAll: {
+      success: 'Besoin supprimées avec succès',
+    },
+    edit: {
+      title: 'Modifier une Besoin',
+    },
+    new: {
+      title: 'Nouvelle Besoin',
+    },
+    view: {
+      title: 'Consulter une Besoin',
+    },
+    importer: {
+      title: 'Importer en masse les Besoins',
+      fileName: 'needs_import_template',
+      hint: 'Files/Images doivent être les URL des fichiers séparés par un espace.',
+    },
+
+    enabled: 'Activé ?',
+    disabled: 'Désactivé ?',
+  },
+
+  users: { 
+    fields: {
+      id: 'Id',
+      display_name: 'display_name',
+      first_name: 'first_name',
+      last_name: 'last_name',
+      gender: 'gender',
+      email: 'Email',
+      phone: 'phone',
+      last_seen: 'last_seen',
+      avatar_profile: 'avatar_profile',
+      created_at: 'Created_at',
+      updated_at: 'Updated_at',
+    },
+    name: 'Utilisateur',
+    label: 'Utilisateur',
+    menu: 'Utilisateur',
+    exporterFileName: 'users_export',
+    list: {
+      menu: 'Utilisateur',
+      title: 'Utilisateur',
+    },
+    create: {
+      success: 'Utilisateur crée avec succès',
+    },
+    update: {
+      success: 'Utilisateur modifée avec succès',
+    },
+    destroy: {
+      success: 'Utilisateur supprimée avec success',
+    },
+    destroyAll: {
+      success: 'Utilisateur supprimées avec succès',
+    },
+    edit: {
+      title: 'Modifier une Utilisateur',
+    },
+    new: {
+      title: 'Nouvelle Utilisateur',
+    },
+    view: {
+      title: 'Consulter une Utilisateur',
+    },
+    importer: {
+      title: 'Importer en masse les Utilisateurs',
+      fileName: 'customers_import_template',
+      hint: 'Files/Images doivent être les URL des fichiers séparés par un espace.',
+    },
+
+    enabled: 'Activé ?',
+    disabled: 'Désactivé ?',
+  },
+
   auditLog: {
     menu: 'Audit Logs',
     title: 'Audit Logs',

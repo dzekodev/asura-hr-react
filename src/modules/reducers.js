@@ -2,7 +2,8 @@ import { connectRouter } from 'connected-react-router';
 import layout from 'modules/layout/layoutReducers';
 import auth from 'modules/auth/authReducers';
 import color from 'modules/color/colorReducers';
-import songs from 'modules/songs/songsReducers';
+import customers from 'modules/customers/customersReducers';
+import needs from 'modules/needs/needsReducers';
 
 import settings from 'modules/settings/settingsReducers';
 import { combineReducers } from 'redux';
@@ -14,5 +15,6 @@ export default (history) =>
     auth,
     settings,
     color,
-    songs,
+    customers,
+    needs,
   });

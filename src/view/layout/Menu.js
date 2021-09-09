@@ -89,14 +89,15 @@ class Menu extends Component {
             : 'none',
         }}
       >
-        <Sider theme="light" trigger={null}>
+        <Sider theme="light" trigger={null}
+        >
           <div className="logo">
             <Logo>
               <img
                 src="/images/logo.png"
                 width={70}
                 height={80}
-                style={{ borderRadius: 5, marginTop: 30 }}
+                style={{ borderRadius: 5, marginTop: 60 }}
               />
             </Logo>
           </div>
@@ -105,6 +106,7 @@ class Menu extends Component {
             theme="light"
             mode="inline"
             selectedKeys={this.selectedKeys}
+            style={{marginTop:35}}
           >
             {routes.privateRoutes
               .filter((privateRoute) => !!privateRoute.menu)
@@ -118,7 +120,7 @@ class Menu extends Component {
                   return (
                     <SubMenu
                       title={
-                        <span>
+                        <span >
                           {privateRoute.icon}
                           <span>{privateRoute.label}</span>
                         </span>
@@ -156,7 +158,7 @@ class Menu extends Component {
 
                 return (
                   <AntMenu.Item key={privateRoute.path}>
-                    <Link to={privateRoute.path}>
+                    <Link style={{display:"flex",alignItems:"center"}} to={privateRoute.path}>
                       {privateRoute.icon}
                       <span>{privateRoute.label}</span>
                     </Link>

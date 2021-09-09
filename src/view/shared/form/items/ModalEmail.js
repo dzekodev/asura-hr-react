@@ -73,13 +73,13 @@ export class ModalEmailNotFast extends Component {
   }
 }
 
-InputFormItemNotFast.defaultProps = {
+ModalEmailNotFast.defaultProps = {
   layout: formItemLayout,
   type: 'text',
   required: false,
 };
 
-InputFormItemNotFast.propTypes = {
+ModalEmailNotFast.propTypes = {
   form: PropTypes.object.isRequired,
   name: PropTypes.string.isRequired,
   required: PropTypes.bool,

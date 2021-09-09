@@ -53,7 +53,7 @@ class SigninPage extends Component {
   };
 
   initialValues = () => {
-    return { email: '', password: '', rememberMe: true };
+    return { email: '', password: '',  rememberMe: true };
   };
 
   doSigninWithSocial = (provider, rememberMe) => {
@@ -194,13 +194,6 @@ class SigninPage extends Component {
                     </Tooltip>
                   </SocialButtons>
                 </Spin>
-
-                <OtherActions>
-                  <Link to="/auth/signup">
-                    {i18n('auth.createAnAccount')}
-                  </Link>
-                </OtherActions>
-
                 <I18nFlags style={{ marginTop: '24px' }} />
               </Form>
             )}

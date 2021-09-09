@@ -3,15 +3,16 @@ import Permissions from 'security/permissions';
 import { i18n } from 'i18n';
 import {
   SettingOutlined,
-  UserAddOutlined,
   CarOutlined,
   DashboardOutlined,
+  CustomerServiceOutlined,
   PullRequestOutlined,
   EnvironmentOutlined,
   SolutionOutlined,
   ExperimentOutlined,
   BorderOuterOutlined,
   UserOutlined,
+  BlockOutlined,
   TableOutlined,
   CodeSandboxOutlined,
 } from '@ant-design/icons';
@@ -101,42 +102,126 @@ const privateRoutes = [
     permissionRequired: permissions.colorRead,
     exact: true,
   },
+  
   {
-    path: '/songs',
-    loader: () => import('view/songs/list/songsListPage'),
-    permissionRequired: permissions.songsRead,
+    path: '/customers',
+    loader: () => import('view/customers/list/customersListPage'),
+    permissionRequired: permissions.customersRead,
     exact: true,
-    icon: <CarOutlined />,
-    label: i18n('songs.menu'),
+    icon: <CustomerServiceOutlined />,
+    label: i18n('customers.menu'),
     menu: {
       exact: true,
     },
   },
   {
-    path: '/songs/new',
-    loader: () => import('view/songs/form/songsFormPage'),
+    path: '/customers/new',
+    loader: () => import('view/customers/form/customersFormPage'),
     menu: false,
-    permissionRequired: permissions.songsCreate,
+    permissionRequired: permissions.customersCreate,
     exact: true,
   },
   {
-    path: '/songs/importer',
+    path: '/customers/importer',
     loader: () =>
-      import('view/songs/importer/songsImporterPage'),
+      import('view/customers/importer/customersImporterPage'),
     menu: false,
-    permissionRequired: permissions.songsImport,
+    permissionRequired: permissions.customersImport,
     exact: true,
   },
   {
-    path: '/songs/:id/edit',
-    loader: () => import('view/songs/form/songsFormPage'),
+    path: '/customers/:id/edit',
+    loader: () => import('view/customers/form/customersFormPage'),
     menu: false,
-    permissionRequired: permissions.songsEdit,
+    permissionRequired: permissions.customersEdit,
     exact: true,
   },
   {
-    path: '/songs/:id',
-    loader: () => import('view/songs/view/songsViewPage'),
+    path: '/customers/:id',
+    loader: () => import('view/customers/view/customersViewPage'),
+    menu: false,
+    permissionRequired: permissions.colorRead,
+    exact: true,
+  },
+  
+  
+  {
+    path: '/needs',
+    loader: () => import('view/needs/list/needsListPage'),
+    permissionRequired: permissions.needsRead,
+    exact: true,
+    icon: <BlockOutlined />,
+    label: i18n('needs.menu'),
+    menu: {
+      exact: true,
+    },
+  },
+  {
+    path: '/needs/new',
+    loader: () => import('view/needs/form/needsFormPage'),
+    menu: false,
+    permissionRequired: permissions.needsCreate,
+    exact: true,
+  },
+  {
+    path: '/needs/importer',
+    loader: () =>
+      import('view/needs/importer/needsImporterPage'),
+    menu: false,
+    permissionRequired: permissions.needsImport,
+    exact: true,
+  },
+  {
+    path: '/needs/:id/edit',
+    loader: () => import('view/needs/form/needsFormPage'),
+    menu: false,
+    permissionRequired: permissions.needsEdit,
+    exact: true,
+  },
+  {
+    path: '/needs/:id',
+    loader: () => import('view/needs/view/needsViewPage'),
+    menu: false,
+    permissionRequired: permissions.colorRead,
+    exact: true,
+  },
+  
+  {
+    path: '/users',
+    loader: () => import('view/users/list/usersListPage'),
+    permissionRequired: permissions.usersRead,
+    exact: true,
+    icon: <UserOutlined />,
+    label: i18n('users.menu'),
+    menu: {
+      exact: true,
+    },
+  },
+  {
+    path: '/users/new',
+    loader: () => import('view/users/form/usersFormPage'),
+    menu: false,
+    permissionRequired: permissions.usersCreate,
+    exact: true,
+  },
+  {
+    path: '/users/importer',
+    loader: () =>
+      import('view/users/importer/usersImporterPage'),
+    menu: false,
+    permissionRequired: permissions.usersImport,
+    exact: true,
+  },
+  {
+    path: '/users/:id/edit',
+    loader: () => import('view/users/form/usersFormPage'),
+    menu: false,
+    permissionRequired: permissions.usersEdit,
+    exact: true,
+  },
+  {
+    path: '/users/:id',
+    loader: () => import('view/users/view/usersViewPage'),
     menu: false,
     permissionRequired: permissions.colorRead,
     exact: true,
@@ -147,10 +232,6 @@ const publicRoutes = [
   {
     path: '/auth/signin',
     loader: () => import('view/auth/SigninPage'),
-  },
-  {
-    path: '/auth/signup',
-    loader: () => import('view/auth/SignupPage'),
   },
   {
     path: '/auth/forgot-password',
